@@ -14,16 +14,8 @@ const InnerContainer = () => {
         marginTop: "25px",
         marginBottom: "25px",
         padding: `0 !important`,
-        filter: `drop-shadow(0
-      px
-       0
-      px
-       50
-      px
-       rgba(0, 0, 0, 0.5))`,
-        border: `10
-      px
-       solid #ffffff`,
+        filter: `drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5))`,
+        border: `10px solid #ffffff`,
       }}
       maxWidth="xl"
     >
