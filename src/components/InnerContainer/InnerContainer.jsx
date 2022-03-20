@@ -6,7 +6,7 @@ import Team from '../Team/Team';
 import Gallery from '../Gallery/Gallery';
 const InnerContainer = () => {
   return (
-    <Container sx={{backgroundImage: "url(inner_container_bg.png)", backgroundAttachment:'fixed', borderRadius: 33, marginTop: '25px', marginBottom: '25px', padding: `0 !important`}} maxWidth="xl">
+    <Container sx={{backgroundImage: "url(inner_container_bg.PNG)", backgroundAttachment:'fixed', borderRadius: 33, marginTop: '25px', marginBottom: '25px', padding: `0 !important`}} maxWidth="xl">
       <About />
       <Gallery />
       <Team />
