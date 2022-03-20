@@ -10,21 +10,219 @@ html {
 .lang__switcher {
   width: 110px;
   height: 76px;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
-
+  cursor: pointer;
 }
 
 .lang__switcher#en {
   border-radius: 0px 0px 33px 0px;
-
 }
 .chosen {
   background: #84bcef;
   box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.25);
   border-radius: 0px;
 }
-#logo{
-  margin-top:70px;
+#logo {
+  margin-top: 70px;
 }
+
+/* lg-размер (<=1199px) */
+@media (max-width: 1500px) {
+  main{
+    width:97% !important;
+  }
+  /* CSS для ширины от 992px до 1199px */
+  #about_1 {
+    max-width: 700px !important;
+    p {
+      font-size: 32px;
+    }
+  }
+  #about_2 {
+    max-width: 460px !important;
+    p {
+      font-size: 24px;
+    }
+  }
+  #about_3 {
+    max-width: 460px !important;
+    p {
+      font-size: 24px;
+    }
+  }
+  #main__dude {
+    margin-left: 20px !important;
+    width: 360px;
+    height: 360px;
+  }
+}
+
+/* lg-размер (<=1199px) */
+@media (max-width: 1199px) {
+  #team_list{
+    transform: scale(0.7);
+  }
+
+  /* CSS для ширины от 992px до 1199px */
+}
+
+/* md-размер (<=991px) */
+@media (max-width: 991px) {
+  .idea__annotation{
+    transform: scale(0.8);
+    text-align: center;
+  }
+  footer{
+
+    #footer_nav{
+      justify-content: space-around !important; 
+    }
+
+  }
+  #about_1 {
+
+    max-width: 420px !important;
+    p {
+      font-size: 24px;
+    }
+  }
+  #about_2 {
+    max-width: 200px !important;
+    p {
+      font-size: 16px;
+    }
+  }
+  #about_3 {
+    max-width: 200px !important;
+    p {
+      font-size: 16px;
+    }
+  }
+  #main__dude {
+    margin-left: 20px !important;
+  }
+
+  #logo {
+    transform: scale(0.7);
+  }
+  #team_list{
+    transform: scale(0.5);
+  }
+
+  /* CSS для ширины от 768px до 991px */
+}
+
+/* sm-размер (<=768px) */
+@media (max-width: 767px) {
+  main{
+
+    width:90% !important;
+    min-width: 500px;
+  }
+  header{
+    min-width: 500px;
+  }
+  footer{
+    min-width: 500px;
+  }
+  /* CSS для ширины от 576px до 767px */
+  .idea__annotation{
+    transform: scale(0.5);
+  }
+  #logo {
+    transform: scale(0.5) !important;
+  }
+  #links{
+    padding:0 !important;
+    img{
+      transform: scale(0.8)
+    }
+  }
+  #about_1 {
+    max-width: 300px !important;
+    p {
+      font-size: 18px;
+      line-height: 1;
+    }
+  }
+  #about_2 {
+    max-width: 200px !important;
+    p {
+      font-size: 12px;
+      line-height: 1;
+    }
+  }
+  #about_3 {
+    max-width: 200px !important;
+    p {
+      font-size: 12px;
+      line-height: 1;
+    }
+  }
+  #main__dude {
+    width: 240px;
+    height: 240px;
+  }
+
+  #logo {
+    transform: scale(0.7);
+  }
+  #team_list{
+    transform: scale(0.45);
+  }
+  .annotation{
+    p{    font-size: 32px !important;}
+
+  }
+
+}
+
+/* xs-размер (<=575px) */
+@media (max-width: 575px) {
+  /* CSS для ширины до 575px (включительно) */
+
+
+  #links{
+    display: none;
+    
+    
+  }
+  #about_1 {
+    max-width: 300px !important;
+    p {
+      font-size: 18px;
+      line-height: 1;
+    }
+  }
+  #about_2 {
+    max-width: 120px !important;
+    p {
+      font-size: 16px;
+      line-height: 1;
+    }
+  }
+  #about_3 {
+    max-width: 120px !important;
+    p {
+      font-size: 16px;
+      line-height: 1;
+    }
+  }
+  #main__dude {
+    width: 200px;
+    height: 200px;
+  }
+
+  #logo {
+    transform: scale(0.7);
+  }
+  #team_list{
+  }
+  .annotation{
+    p{    font-size: 24px !important;}
+
+  }
+}
+

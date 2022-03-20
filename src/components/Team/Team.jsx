@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Stack, Typography } from "@mui/material";
 import "./Team.scss";
-const Team = () => {
+const Team = ({langState}) => {
   return (
     <Box
       sx={{
@@ -16,11 +16,12 @@ const Team = () => {
     >
       <div className="annotation">
         <Typography sx={{ fontWeight: 900, fontSize: "50px" }}>
-          Команда проекта
+          {langState?"Команда проекта":"PROJECT TEAM"}
         </Typography>{" "}
       </div>
 
       <Stack
+        id="team_list"
         direction="row"
         mt="100px"
         sx={{ width: 1024, justifyContent: "space-between" }}

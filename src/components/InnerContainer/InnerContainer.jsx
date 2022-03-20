@@ -4,12 +4,14 @@ import TelegramIcon from "@mui/icons-material/Telegram";
 import About from "../About/About";
 import Team from "../Team/Team";
 import Gallery from "../Gallery/Gallery";
-const InnerContainer = () => {
+const InnerContainer = (props) => {
   return (
-    <Container
+    <Container 
+    component="main"
       sx={{
         backgroundImage: "url(inner_container_bg.PNG)",
         backgroundAttachment: "fixed",
+        backgroundSize: "cover",
         borderRadius: 33,
         marginTop: "75px",
         marginBottom: "75px",
@@ -21,9 +23,9 @@ const InnerContainer = () => {
       maxWidth="xl"
     >
       
-      <About />
-      <Gallery />
-      <Team />
+      <About langState={props.langState}/>
+      <Gallery langState={props.langState} />
+      <Team langState={props.langState}/>
     </Container>
     // <Stack direction="row" spacing="60px" mt="160px">
     //   <img src="assets/mainImage.png" alt="" width="550px" />

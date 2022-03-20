@@ -1,12 +1,12 @@
 import React from "react";
-import { Stack, Typography, Box } from "@mui/material";
+import { Stack, Typography, Box, Link } from "@mui/material";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/grid";
 import "swiper/css/pagination";
 import "./About.scss";
-const About = () => {
+const About = ({ langState }) => {
   return (
     <>
       <Stack
@@ -18,17 +18,33 @@ const About = () => {
         <div className="left__annotation" id="about_1">
           {" "}
           <Typography
-            sx={{ fontWeight: 900, fontSize: "50px", color: "#3082BD", lineHeight: '59px' }}
+            sx={{
+              fontWeight: 900,
+              fontSize: "50px",
+              color: "#3082BD",
+              lineHeight: "59px",
+            }}
           >
-            {" "}
-            TON DUDES - ЭТО 1000 УНИКАЛЬНЫХ NFT, СОЧЕТАЮЩИЕ В СЕБЕ СМЕШЕНИЕ ДВУХ
-            СТИЛЕЙ ИСКУССТВА, ПИКСЕЛЬ АРТ И МИНИМАЛИЗМ.{" "}
+            {langState
+              ? "TON DUDES - ЭТО 1000 УНИКАЛЬНЫХ NFT, СОЧЕТАЮЩИЕ В СЕБЕ СМЕШЕНИЕ ДВУХ СТИЛЕЙ ИСКУССТВА, ПИКСЕЛЬ АРТ И МИНИМАЛИЗМ"
+              : "TON DUDES are 1,000 unique NFTs combining a mix of two styles of art, pixel art and minimalism."}
           </Typography>{" "}
         </div>
         <div className="right__annotation" id="links">
           <Stack direction="column">
-            <img src="tg_icon.png" alt="" width="122px" height="122px" />{" "}
-            <img src="twitter_icon.png" alt="" width="122px" height="122px" />{" "}
+            <Link href="https://t.me/tondudes">
+              {" "}
+              <img src="tg_icon.png" alt="" width="122px" height="122px" />{" "}
+            </Link>
+            <Link href="https://twitter.com/Ton_Dudes">
+              {" "}
+              <img
+                src="twitter_icon.png"
+                alt=""
+                width="122px"
+                height="122px"
+              />{" "}
+            </Link>
           </Stack>
         </div>
       </Stack>
@@ -56,18 +72,30 @@ const About = () => {
         >
           <div className="right__annotation" id="about_2">
             <Typography
-              sx={{ fontWeight: 900, fontSize: "34px", color: "#3082BD", lineHeight: '40px' }}
+              sx={{
+                fontWeight: 900,
+                fontSize: "34px",
+                color: "#3082BD",
+                lineHeight: "40px",
+              }}
             >
-              КАЖДЫЙ ИЗ ЭТИХ РЕБЯТ УНИКАЛЕН, НО ПРИ ЭТОМ ИХ КОЕ-ЧТО ОБЪЕДИНЯЕТ,
-              А ИМЕННО БЕЗЛИКОСТЬ.
+              {langState
+                ? "КАЖДЫЙ ИЗ ЭТИХ РЕБЯТ УНИКАЛЕН, НО ПРИ ЭТОМ ИХ КОЕ-ЧТО ОБЪЕДИНЯЕТ, А ИМЕННО БЕЗЛИКОСТЬ."
+                : "Each of these guys is unique, but at the same time they have something in common, namely facelessness."}
             </Typography>
           </div>
           <div className="right__annotation" id="about_3">
             <Typography
-              sx={{ fontWeight: 900, fontSize: "34px", color: "#3082BD", lineHeight: '40px' }}
+              sx={{
+                fontWeight: 900,
+                fontSize: "34px",
+                color: "#3082BD",
+                lineHeight: "40px",
+              }}
             >
-              ОТСУТСТВИЕ ИЛИ СКРЫТИЕ ЧЕРТ ЛИЦА ПОД МАСКОЙ ДЕЛАЕТ ИХ АНОНИМНЫМИ
-              ИЛИ В КАКОМ ТО СМЫСЛЕ СВОБОДНЫМИ
+              {langState
+                ? "ОТСУТСТВИЕ ИЛИ СКРЫТИЕ ЧЕРТ ЛИЦА ПОД МАСКОЙ ДЕЛАЕТ ИХ АНОНИМНЫМИ ИЛИ В КАКОМ ТО СМЫСЛЕ СВОБОДНЫМИ"
+                : "The absence or concealment of facial features under a mask makes them anonymous or, in a sense, free."}
             </Typography>
           </div>
         </Box>
