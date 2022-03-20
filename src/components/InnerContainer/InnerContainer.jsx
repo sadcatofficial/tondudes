@@ -1,12 +1,32 @@
 import React from "react";
 import { Box, Stack, Typography, Container } from "@mui/material";
 import TelegramIcon from "@mui/icons-material/Telegram";
-import About from '../About/About';
-import Team from '../Team/Team';
-import Gallery from '../Gallery/Gallery';
+import About from "../About/About";
+import Team from "../Team/Team";
+import Gallery from "../Gallery/Gallery";
 const InnerContainer = () => {
   return (
-    <Container sx={{backgroundImage: "url(inner_container_bg.PNG)", backgroundAttachment:'fixed', borderRadius: 33, marginTop: '25px', marginBottom: '25px', padding: `0 !important`}} maxWidth="xl">
+    <Container
+      sx={{
+        backgroundImage: "url(inner_container_bg.PNG)",
+        backgroundAttachment: "fixed",
+        borderRadius: 33,
+        marginTop: "25px",
+        marginBottom: "25px",
+        padding: `0 !important`,
+        filter: `drop-shadow(0
+      px
+       0
+      px
+       50
+      px
+       rgba(0, 0, 0, 0.5))`,
+        border: `10
+      px
+       solid #ffffff`,
+      }}
+      maxWidth="xl"
+    >
       <About />
       <Gallery />
       <Team />
