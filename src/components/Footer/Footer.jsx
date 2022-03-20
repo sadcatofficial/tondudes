@@ -52,8 +52,8 @@ const Footer = () => {
             borderRadius: "100px",
           }}
         >
-            <Link href="https://t.me/tondudes"><img src="twitter_icon.png" alt="" width="110px" height="110px" /> </Link>
-            <Link href="https://twitter.com/Ton_Dudes"><img src="tg_icon.png" alt=""  width="110px" height="110px" /> </Link>
+            <Link href="https://twitter.com/Ton_Dudes"><img src="twitter_icon.png" alt="" width="110px" height="110px" /> </Link>
+            <Link href="https://t.me/tondudes"><img src="tg_icon.png" alt=""  width="110px" height="110px" /> </Link>
         </Box>
       </Stack>
     </Box>
