@@ -11,14 +11,16 @@ const InnerContainer = () => {
         backgroundImage: "url(inner_container_bg.PNG)",
         backgroundAttachment: "fixed",
         borderRadius: 33,
-        marginTop: "25px",
-        marginBottom: "25px",
+        marginTop: "75px",
+        marginBottom: "75px",
         padding: `0 !important`,
         filter: `drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5))`,
+        boxShadow: `inset 0px 0px 20px rgba(0, 0, 0, 0.25)`,
         border: `10px solid #ffffff`,
       }}
       maxWidth="xl"
     >
+      
       <About />
       <Gallery />
       <Team />

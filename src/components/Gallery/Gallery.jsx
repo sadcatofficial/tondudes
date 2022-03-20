@@ -16,6 +16,7 @@ const Gallery = () => {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
+        filter: `drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.25))`,
       }}
     >
     <Stack direction="column" spacing="42px">

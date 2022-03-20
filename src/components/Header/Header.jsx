@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Stack, Typography, Link } from "@mui/material";
 import "./Header.scss";
-
+// 
 const Header = () => {
   const langSyles = { fontWeight: 900, fontSize: "34px"};
   return (
@@ -14,7 +14,8 @@ const Header = () => {
         color: `white`,
         alignItems: "center",
         backgroundColor: "#84BCEF",
-        height: 426,
+        filter: `drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.25))`, 
+        borderBottom: `10px solid`,
         borderRadius: "0px 0px 33px 33px",
       }}
     >
@@ -25,7 +26,7 @@ const Header = () => {
         height="100%"
         sx={{ alignItems: "center",justifyContent: 'space-between' }}
       >
-        <img src="logo.png" alt="" width="1250px" height="333px" />
+        <img id="logo" src="logo.png" alt="" width="928px" height="203px" />
         <Box
           sx={{
             width: "100%",

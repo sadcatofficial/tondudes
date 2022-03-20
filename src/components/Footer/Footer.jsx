@@ -15,6 +15,8 @@ const Footer = () => {
         backgroundColor: "#84BCEF",
         height: 175,
         borderRadius: "33px 33px 0px 0px",
+        filter: `drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.25))`, 
+        borderTop: `10px solid`,
       }}
     >
       <Stack
