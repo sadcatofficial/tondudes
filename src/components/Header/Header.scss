@@ -1,20 +1,27 @@
-html{
-    background-color: #BBCFF2;
-    scroll-behavior: smooth;
+html {
+  background-color: white;
+  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
-    background-color: #c8d7f1;
-  }
-  
-::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background-color: #86a3d7;
-  }
-  
-::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
-    border-radius: 10px;
-    background-color: #c8d7f1;
-  }
+  width: 0;
+}
+
+.lang__switcher {
+  width: 110px;
+  height: 76px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.lang__switcher#en {
+  border-radius: 0px 0px 33px 0px;
+
+}
+.chosen {
+  background: #84bcef;
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 0px;
+}

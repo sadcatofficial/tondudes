@@ -1,0 +1,10 @@
+.idea__annotation {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(4px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 15px;
+  display:flex; 
+    justify-content: center;
+    padding: 10px 20px;
+}

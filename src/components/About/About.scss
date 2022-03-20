@@ -1,29 +1,49 @@
-.ton_dudes{
-  .swiper {
-    width: 100%;
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
+#links {
+  margin-top: 88px;
+}
 
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
+.left__annotation {
+  background: #ffffff;
+  opacity: 0.9;
+  border-radius: 0px 33px 33px 0px;
+  padding: 18px 32px;
+}
 
-    height: calc((100% - 200px) / 2) !important;
+.right__annotation {
+  background: #ffffff;
+  opacity: 0.9;
+  border-radius: 33px 0px 0px 33px;
+  padding: 18px 32px;
+}
 
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-  }
+.annotation {
+  background: #ffffff;
+  opacity: 0.9;
+  border-radius: 23px;
+  padding: 24px 64px;
+  color: #3082bd;
+}
+.annotation__creator {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  opacity: 0.9;
+  border-radius: 7px;
+}
+#about_1 {
+  max-width: 1160px;
+}
+#about_2 {
+  max-width: 780px;
+}
+#about_3 {
+  margin-top: 54px;
+  max-width: 670px;
+}
+#main__dude {
+  border: 8px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 33px 0px;
+  margin-left: 72px;
 }

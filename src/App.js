@@ -1,21 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header/Header';
-import Main from './components/Main/Main';
-import About from './components/About/About';
-import Team from './components/Team/Team';
-import Variations from './components/Variations/Variations';
+import Footer from './components/Footer/Footer';
+import InnerContainer from './components/InnerContainer/InnerContainer';
+
 import { Container } from '@mui/material';
 
 function App() {
   return (
-      <Container maxWidth="1020px" fixed>
-        <Header />
-        <Main/>
-        <About id="about"/>
-        <Variations/>
-        <Team/>
-      </Container>
+    <>
+      <Header />
+      <InnerContainer />
+      <Footer />
+    </>
   );
 }
 

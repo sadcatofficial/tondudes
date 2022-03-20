@@ -3,40 +3,40 @@ import { Box, Stack, Typography, Link } from "@mui/material";
 import "./Header.scss";
 
 const Header = () => {
-  
+  const langSyles = { fontWeight: 900, fontSize: "34px"};
   return (
     <Box
       component="header"
-      mt="30px"
       sx={{
         display: "flex",
         flexDirection: "row",
-        justifyContent: "space-between",
+        justifyContent: "center",
         color: `white`,
         alignItems: "center",
+        backgroundColor: "#84BCEF",
+        height: 426,
+        borderRadius: "0px 0px 33px 33px",
       }}
     >
-      <Typography
-        sx={{ fontWeight: 600, fontSize: "40px", lineHeight: "47px" }}
-        mr="32px"
-      >
-        TonDudes
-      </Typography>
       <Stack
-        direction="row"
-        spacing="35px"
-        sx={{ fontWeight: 600, fontSize: "30px", lineHeight: "35px" }}
-        component="nav"
+        direction="column"
+        sx={{}}
+        width="100%"
+        height="100%"
+        sx={{ alignItems: "center",justifyContent: 'space-between' }}
       >
-        <Link href="#about" color="inherit" underline="none">
-          About
-        </Link>
-        <Link href="#variations" color="inherit" underline="none">
-          Variations
-        </Link>
-        <Link href="#team" color="inherit" underline="none">
-          Team
-        </Link>
+        <img src="logo.png" alt="" width="1250px" height="333px" />
+        <Box
+          sx={{
+            width: "100%",
+            height: 76,
+          }}
+        >
+          <Stack sx={{ flexDirection: "row", justifyContent: "flex-end" }}>
+            <div id="ru" className="lang__switcher chosen"><Typography sx={langSyles}>RU</Typography></div>
+            <div id="en" className="lang__switcher"><Typography sx={langSyles}>EN</Typography></div>
+          </Stack>
+        </Box>
       </Stack>
     </Box>
   );
